@@ -89,7 +89,9 @@ header{
 .nav-bar a.effect:hover{
     border-bottom: 2px solid blue;
 }
-
+.menu-btn{
+    display: none;
+}
 .logo img{
     height: 25px; 
     width: 125px;
@@ -648,4 +650,388 @@ a.discover-slogan{
     padding: 0px 3px;
     font-weight: 550;
     letter-spacing: 2px;
+}
+
+
+@media (max-width: 768px) {
+
+  *{
+    overflow-x: hidden;
+  }
+
+
+
+  header{
+    display: none;
+  }
+
+
+  .nav-bar{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background: white;
+  }
+
+  .menu-btn{
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo{
+    order: -1;
+  }
+
+  .logo img{
+    width: 100px;
+    height: auto;
+  }
+
+  .effect{
+    display: none;
+    width: 100%;
+    padding: 15px 0px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .effect.active{
+    display: block;
+  }
+
+  .search{
+    border-bottom: none;
+  }
+
+
+
+  .slideshow-container{
+    gap: 0;
+  }
+
+  .card{
+    padding: 0;
+    width: 100%;
+  }
+
+
+
+  .slogan{
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .slogan p{
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+
+
+  .catagory{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .catagory-image{
+    width: 100%;
+    max-width: 350px;
+    height: 280px;
+  }
+
+  .catagory-text{
+    padding: 20px;
+  }
+
+
+  .products{
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .products a{
+    font-size: 13px;
+  }
+
+
+  .carousal,
+  .carousal2{
+    width: 95%;
+    gap: 15px;
+  }
+
+  .card2{
+    flex: 0 0 13em;
+    margin-bottom: 120px;
+  }
+
+  .card2 img{
+    width: 160px;
+    height: 160px;
+  }
+
+  .watch-content{
+    bottom: -60px;
+  }
+
+  .watch-content2{
+    bottom: -35px;
+    left: 10px;
+  }
+
+  .watch-para,
+  .watch-para2{
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .watch-price{
+    font-size: 13px;
+  }
+
+  .badge{
+    font-size: 11px;
+    left: -10px;
+  }
+
+  .out-of-stock{
+    top: 145px;
+    padding: 8px 25px;
+    font-size: 12px;
+  }
+
+  .actions{
+    top: 280px;
+    gap: 12px;
+  }
+
+  .actions button{
+    width: 40px;
+    padding: 8px;
+  }
+
+
+
+  #explore{
+    padding: 20px;
+  }
+
+  #explore h4{
+    font-size: 18px;
+  }
+
+  #explore p{
+    font-size: 14px;
+  }
+
+  .explore-image{
+    width: 100%;
+  }
+
+  .video{
+    width: 60px;
+    height: 60px;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  #collections h4{
+    font-size: 20px;
+  }
+
+
+
+  .discover-image-container{
+    position: relative;
+  }
+
+  .discover-img{
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+  }
+
+  .discover-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .discover-content h4{
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .para{
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .discover-slogan{
+    font-size: 12px;
+    padding: 12px 18px;
+  }
+
+  .discover-para{
+    padding: 25px;
+  }
+
+  .discover-para p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .discover-btn-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px;
+  }
+
+  .btn{
+    width: 100%;
+    text-align: center;
+  }
+
+  /* FINAL SECTION */
+
+  #final{
+    margin-top: 50px;
+  }
+
+  .final-image{
+    min-height: 300px;
+    object-fit: cover;
+  }
+
+  .final-contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  .final-contents h4{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .final-btn{
+    padding: 12px 20px !important;
+    font-size: 13px;
+  }
+
+  /* FOOTER */
+
+  .footer{
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .list-container{
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .ul{
+    padding: 0;
+    line-height: 2;
+  }
+
+  .list-heading{
+    margin-bottom: 10px;
+  }
+
+}
+.footer{
+    background: rgb(0,51,171);
+    padding: 25px;
+    color: white;
+}
+
+.footer-item{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 18px 0px;
+}
+
+.footer-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-title h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-title i{
+    font-size: 26px;
+    transition: 0.3s;
+}
+
+.footer-links{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.footer-links li{
+    list-style: none;
+    padding: 10px 0px;
+    font-size: 15px;
+    color: #f1f1f1;
+}
+
+.footer-item.active .footer-links{
+    max-height: 500px;
+    margin-top: 10px;
+}
+
+.footer-item.active .footer-title i{
+    transform: rotate(180deg);
+}
+
+.footer-bottom{
+    padding-top: 30px;
+}
+
+.footer-bottom h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-bottom p{
+    margin: 14px 0px;
+    font-size: 15px;
+    color: #f1f1f1;
+}
+
+.follow{
+    margin-top: 30px;
+}
+
+.socials{
+    display: flex;
+    gap: 25px;
+    font-size: 28px;
+    margin-top: 20px;
 }
