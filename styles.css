@@ -610,46 +610,56 @@ a.discover-slogan{
     font-size: 14px;
 }
 
-.footer{
-    height: 278px; 
-    background-color: var(--primary-blue);
-}
+/* FOOTER */
 
+.footer{
+    background: rgb(0,51,171);
+    padding: 40px 60px;
+}
 
 .list-container{
-    width: 95%;
-    color: white;
     display: flex;
-    justify-content: center;
-    gap: 75px;
-}
-.ul{
-    font-size: 14px;
-    padding: 15px;
-    line-height: 2.4;
-}
-.ul li{
-    list-style-type: none;
-}
-.list-heading{
-    font-size: 16px;
-    font-weight: 600;
-}
-.socials{
-    letter-spacing: 10px;
-}
-.watch-content2{
-    position: absolute;
-    bottom: -40px;
-    left: 20px;
+    justify-content: space-between;
+    gap: 40px;
+    color: white;
 }
 
-.watch-para2{
-    color: #555;
-    font-size: 14px;
-    padding: 0px 3px;
-    font-weight: 550;
-    letter-spacing: 2px;
+.footer-title i{
+    display: none;
+}
+
+.footer-title h3,
+.footer-static h3{
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.footer-links{
+    list-style: none;
+}
+
+.footer-links li{
+    margin-bottom: 18px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer-static p{
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.socials{
+    display: flex;
+    gap: 25px;
+    font-size: 28px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.follow{
+    margin-top: 30px;
 }
 
 
@@ -906,8 +916,6 @@ a.discover-slogan{
     text-align: center;
   }
 
-  /* FINAL SECTION */
-
   #final{
     margin-top: 50px;
   }
@@ -936,9 +944,6 @@ a.discover-slogan{
     padding: 12px 20px !important;
     font-size: 13px;
   }
-
-  /* FOOTER */
-
   .footer{
     height: auto;
     padding: 30px 20px;
@@ -958,80 +963,78 @@ a.discover-slogan{
   .list-heading{
     margin-bottom: 10px;
   }
+    .footer{
+        padding: 25px 20px;
+    }
+
+    .list-container{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer-item{
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding: 18px 0px;
+    }
+
+    .footer-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .footer-title i{
+        display: block;
+        font-size: 24px;
+        transition: 0.3s;
+    }
+
+    .footer-title h3{
+        margin-bottom: 0;
+        font-size: 17px;
+    }
+
+    .footer-links{
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s ease;
+    }
+
+    .footer-links li{
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .footer-item.active .footer-links{
+        max-height: 400px;
+        margin-top: 20px;
+    }
+
+    .footer-item.active .footer-title i{
+        transform: rotate(180deg);
+    }
+
+    .footer-static{
+        padding-top: 25px;
+    }
+
+    .footer-static h3{
+        font-size: 17px;
+        margin-bottom: 18px;
+    }
+
+    .footer-static p{
+        font-size: 14px;
+        margin-bottom: 12px;
+        line-height: 1.7;
+    }
+
+    .socials{
+        font-size: 24px;
+        gap: 20px;
+    }
 
 }
-.footer{
-    background: rgb(0,51,171);
-    padding: 25px;
-    color: white;
-}
 
-.footer-item{
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    padding: 18px 0px;
-}
 
-.footer-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-
-.footer-title h3{
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.footer-title i{
-    font-size: 26px;
-    transition: 0.3s;
-}
-
-.footer-links{
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.4s ease;
-}
-
-.footer-links li{
-    list-style: none;
-    padding: 10px 0px;
-    font-size: 15px;
-    color: #f1f1f1;
-}
-
-.footer-item.active .footer-links{
-    max-height: 500px;
-    margin-top: 10px;
-}
-
-.footer-item.active .footer-title i{
-    transform: rotate(180deg);
-}
-
-.footer-bottom{
-    padding-top: 30px;
-}
-
-.footer-bottom h3{
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.footer-bottom p{
-    margin: 14px 0px;
-    font-size: 15px;
-    color: #f1f1f1;
-}
-
-.follow{
-    margin-top: 30px;
-}
-
-.socials{
-    display: flex;
-    gap: 25px;
-    font-size: 28px;
-    margin-top: 20px;
-}
