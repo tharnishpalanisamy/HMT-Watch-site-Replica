@@ -665,7 +665,7 @@ a.discover-slogan{
 
 @media (max-width: 768px) {
 
-  *{
+  body{
     overflow-x: hidden;
   }
 
@@ -685,6 +685,7 @@ a.discover-slogan{
     position: sticky;
     top: 0;
     background: white;
+    z-index: 9999;
   }
 
   .menu-btn{
